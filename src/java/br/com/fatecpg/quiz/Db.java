@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author MohamadTarif
  */
 public class Db {
-    public static ArrayList<Perguntas> getMathQuiz(){
+    public static ArrayList<Perguntas> getAvengersQuiz(){
         ArrayList<Perguntas> quiz = new ArrayList<>();
         quiz.add(new Perguntas("1. Quem é o primeiro vingador?", "Capitão América", new String[]{"Hulk", "Homem de Ferro", "Homem Aranha", "Capitão América", "Viuva Negra"}));
         quiz.add(new Perguntas("2. Qual a raça alienígena que ajuda Loki a invadir a Terra no filme \"Os Vingadores\"?", "Chitauri", new String[]{"Chitauri", "Skrull", "Marcianos", "Krees", "Badoons"}));
