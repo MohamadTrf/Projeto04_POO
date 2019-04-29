@@ -35,7 +35,7 @@
             <%for(Perguntas q: Db.getAvengersQuiz()){%>
             <h3><%=q.getPergunta() %></h3>
             <%for(String alternative: q.getAlternativas()){%>
-            <h4><input type="radio" name="<%=q.getPergunta()%>" value="<%=alternative%>"/><%=alternative%></h4>
+            <h4><input class="form-check" type="radio" name="<%=q.getPergunta()%>" value="<%=alternative%>"/><%=alternative%></h4>
             <%}%>
         <%}%>
           <input type="submit" name="AvengersQuiz" value="Enviar"/>

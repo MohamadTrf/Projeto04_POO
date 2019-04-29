@@ -12,10 +12,19 @@
         <title>Início</title>
     </head>
     <body style="background-color: #2a247a">
-        <h1>Hello World!</h1>
-        <div class="alert alert-dark" role="alert">
-            Declaramos para os devidos fins que este Quiz não possui qualquer tipo de Spoiler para "Vingadores: Ultimato"!!!>
+        <br>
+                <div class="text-center" style="color: red" >
+            <h2>Declaramos para os devidos fins que este Quiz não possui qualquer tipo de Spoiler para "Vingadores: Ultimato"!!!</h2>
         </div>
+        <br>
+        <div class="text-center">
+            <a>
+                <img src="imagem/avengers.png" width="350" height="350" alt="">
+            </a>
+        </div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" name="Entrar" value="Entrar">Entrar</button>>
+        
+        
         <footer>
             <%@include file="WEB-INF/jspf/foot.jspf" %>
         </footer>
