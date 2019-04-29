@@ -5,6 +5,8 @@
     Author     : MohamadTarif
 --%>
 
+<%@page import="br.com.fatecpg.quiz.Db"%>
+<%@page import="br.com.fatecpg.quiz.Perguntas"%>
 <%@page import="br.com.fatecpg.quiz.DbConta"%>
 <%@page import="br.com.fatecpg.quiz.Conta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

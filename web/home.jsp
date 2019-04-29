@@ -5,6 +5,8 @@
     Author     : MohamadTarif
 --%>
 
+<%@page import="br.com.fatecpg.quiz.Perguntas"%>
+<%@page import="br.com.fatecpg.quiz.Db"%>
 <%@page import="br.com.fatecpg.quiz.Conta"%>
 <%@page import="br.com.fatecpg.quiz.DbConta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,6 +14,24 @@
 
 <html>
     <head>
+        <%
+    double nota = 0.0;
+    if(request.getParameter("AvengersQuiz") != null){
+        int acertos = 0;
+        
+        for( Perguntas pergunta: Db.getAvengersQuiz()){
+            String resposta = request.getParameter(pergunta.getPergunta());
+            
+            if (!resposta.isEmpty() && resposta != null) {
+                if(pergunta.getResposta().equals(resposta)){
+                    acertos++;
+                }
+            }
+        }
+        
+        nota = (double) acertos / (double)Db.getAvengersQuiz().size();
+    }
+%>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Quiz</title>
     </head>
