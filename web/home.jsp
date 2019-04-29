@@ -56,13 +56,15 @@
      
 
 %>
-        <h1 style="color: whitesmoke">Usuário <%=user%></h1>
+    <div class="mx-auto" style="width: 1200px">       
+<h1 style="color: whitesmoke">Usuário <%=user%></h1>
         
         <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
  <%}catch (Exception ex) { %>
  <% sessao.invalidate();
  
  }%>
+    </div>
         <footer>
             <%@include file="WEB-INF/jspf/foot.jspf" %>
         </footer>

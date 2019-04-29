@@ -39,13 +39,15 @@
          <header>
              <%@include file="WEB-INF/jspf/menu.jspf" %>
          </header>
+         <div class="mx-auto" style="width: 1200px">
         <h1 style="color: whitesmoke" >Pagina de login!</h1>
         <form style="color: whitesmoke" >
             Usuario <input type="text" name="usuario"/>
             <input type="submit" name="logar" value="logar"/> 
         </form>
         <a href="cadastrarConta.jsp" style="color: whitesmoke" >Cadastrar nova conta </a>
-         <footer>
+         </div>
+        <footer>
             <%@include file="WEB-INF/jspf/foot.jspf" %>
         </footer>
     </body>

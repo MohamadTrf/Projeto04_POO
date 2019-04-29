@@ -16,7 +16,7 @@
                 <a class="nav-link" href="" style="color: whitesmoke">Testes já feitos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="" style="color: whitesmoke">Equipe</a>
+                <a class="nav-link" href="equipe.jsp" style="color: whitesmoke">Equipe</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="" style="color: whitesmoke">Sair</a>
@@ -24,3 +24,4 @@
         </ul>
     </div>
 </nav>
+<br>

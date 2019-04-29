@@ -30,8 +30,10 @@
         }
      
    %>
-            
-        <h3 style="color: whitesmoke">Usuário<%=user%></h3>
+   <div class="mx-auto" style="width: 1200px">
+        <h4 style="color: whitesmoke">Usuário<%=user%></h4>
+        <br>
+        <br>
         <h2 style="color: whitesmoke">Quiz Avengers</h2>
         <form action="index.jsp" style="color: whitesmoke">
             <%for(Perguntas q: Db.getAvengersQuiz()){%>
@@ -52,6 +54,7 @@
     <% sessao.invalidate();
        }%>
         </form>
+   </div>
         <footer>
             <%@include file="WEB-INF/jspf/foot.jspf" %>
         </footer>

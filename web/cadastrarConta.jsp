@@ -33,13 +33,21 @@
 %>
         
     </head>
-    <body>
-        <h1>Faça um Cadastro no nosso Quiz!</h1>
-        <form>
+    <body style="background-color: #2a247a">
+         <header>
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+         </header>
+        <div class="mx-auto" style="width: 1200px">
+        <h1 style="color: whitesmoke">Faça um Cadastro no nosso Quiz!</h1>
+        <form style="color: whitesmoke">
           Usuário:  <input type ="text" name="user1"/>
           <input type="submit" name="cadastrar" value="Cadastrar Conta"/>
-          <a href="index.jsp">Voltar a página inicial</a>
+          <br>
+          <a href="index.jsp" style="color: whitesmoke">Voltar a página inicial</a>
         </form>
-        <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </div>
+        <footer>
+            <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </footer>
     </body>
 </html>
