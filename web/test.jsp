@@ -14,6 +14,21 @@
         <title>Teste - WebQuiz</title>
     </head>
     <body>
+   <%
+     HttpSession sessao = request.getSession(true);
+     try{
+        if(sessao.getAttribute("userOn")== null){
+         response.sendRedirect("index.jsp");
+        }
+         String user = sessao.getAttribute("userOn").toString();
+        if(request.getParameter("sair")!=null){
+            sessao.invalidate();
+            response.sendRedirect("index.jsp");
+        }
+     
+   %>
+            
+        <h1>Usuário<%=user%></h1>
         <h1>WebQuiz</h1>
         <h2>Quiz Avengers</h2>
         <form action="index.jsp">
@@ -23,7 +38,11 @@
             <h4><input type="radio" name="<%=q.getPergunta()%>" value="<%=alternative%>"/><%=alternative%></h4>
             <%}%>
         <%}%>
-            <input type="submit" name="AvengersQuiz" value="Enviar"/>
+          <input type="submit" name="AvengersQuiz" value="Enviar"/>
+          <input type="submit" name="sair" value="Sair"/>          
+    <%}catch (Exception ex) {%>
+    <% sessao.invalidate();
+       }%>
         </form>
     </body>
 </html>
