@@ -22,7 +22,7 @@
                 <img src="imagem/avengers.png" width="350" height="350" alt="">
             </a>
         </div>
-        <button type="button" class="btn btn-secondary btn-lg btn-block" name="Entrar" value="Entrar">Entrar</button>>
+        <button onclick="window.location.href='home.jsp'" class="btn btn-secondary btn-lg btn-block" name="Entrar" value="Entrar">Entrar</button>>
         
         
         <footer>

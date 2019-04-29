@@ -15,7 +15,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Quiz</title>
     </head>
-    <body>
+    <body style="background-color: #2a247a">
+         <header>
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+         </header>
 <%
   HttpSession sessao = request.getSession(true);
   
@@ -33,12 +36,15 @@
      
 
 %>
-        <h1>Usuário <%=user%></h1>
+        <h1 style="color: whitesmoke">Usuário <%=user%></h1>
         
-        <form>  <input type="submit" value="Sair" name="sair"/> </form>
+        <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
  <%}catch (Exception ex) { %>
  <% sessao.invalidate();
  
  }%>
+        <footer>
+            <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </footer>
     </body>
 </html>

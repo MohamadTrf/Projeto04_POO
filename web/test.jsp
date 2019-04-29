@@ -13,7 +13,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Teste - WebQuiz</title>
     </head>
-    <body>
+   <body style="background-color: #2a247a">
+         <header>
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+         </header>
    <%
      HttpSession sessao = request.getSession(true);
      try{
@@ -28,10 +31,9 @@
      
    %>
             
-        <h1>Usuário<%=user%></h1>
-        <h1>WebQuiz</h1>
-        <h2>Quiz Avengers</h2>
-        <form action="index.jsp">
+        <h3 style="color: whitesmoke">Usuário<%=user%></h3>
+        <h2 style="color: whitesmoke">Quiz Avengers</h2>
+        <form action="index.jsp" style="color: whitesmoke">
             <%for(Perguntas q: Db.getAvengersQuiz()){%>
             <h3><%=q.getPergunta() %></h3>
             <%for(String alternative: q.getAlternativas()){%>
@@ -44,6 +46,8 @@
     <% sessao.invalidate();
        }%>
         </form>
-        <%@include file="WEB-INF/jspf/foot.jspf" %>
+        <footer>
+            <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </footer>
     </body>
 </html>
