@@ -11,8 +11,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Início</title>
     </head>
-    <body>
+    <body style="background-color: #2a247a">
         <h1>Hello World!</h1>
-        <%@include file="WEB-INF/jspf/foot.jspf" %>
+        <div class="alert alert-dark" role="alert">
+            Declaramos para os devidos fins que este Quiz não possui qualquer tipo de Spoiler para "Vingadores: Ultimato"!!!>
+        </div>
+        <footer>
+            <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </footer>
     </body>
+    
 </html>
