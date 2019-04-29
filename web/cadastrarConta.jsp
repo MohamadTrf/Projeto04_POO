@@ -40,5 +40,6 @@
           <input type="submit" name="cadastrar" value="Cadastrar Conta"/>
           <a href="index.jsp">Voltar a página inicial</a>
         </form>
+        <%@include file="WEB-INF/jspf/foot.jspf" %>
     </body>
 </html>

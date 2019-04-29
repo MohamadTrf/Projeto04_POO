@@ -40,6 +40,6 @@
             <input type="submit" name="logar" value="logar"/> 
         </form>
         <a href="cadastrarConta.jsp">Cadastrar nova conta </a>
-        
+        <%@include file="WEB-INF/jspf/foot.jspf" %>
     </body>
 </html>

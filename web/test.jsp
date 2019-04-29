@@ -44,5 +44,6 @@
     <% sessao.invalidate();
        }%>
         </form>
+        <%@include file="WEB-INF/jspf/foot.jspf" %>
     </body>
 </html>
