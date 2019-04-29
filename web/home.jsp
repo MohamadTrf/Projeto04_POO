@@ -9,8 +9,17 @@
 <%@page import="br.com.fatecpg.quiz.DbConta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home Quiz</title>
+    </head>
+    <body>
 <%
-    HttpSession sessao = request.getSession();
+  HttpSession sessao = request.getSession(true);
+  
+  try{
     
     if(sessao.getAttribute("userOn")== null){
         response.sendRedirect("index.jsp");
@@ -20,16 +29,16 @@
     if(request.getParameter("sair")!=null){
         sessao.invalidate();
         response.sendRedirect("index.jsp");
-    }
-%>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home Quiz</title>
-    </head>
-    <body>
+     }
+     
 
+%>
         <h1>Usuário <%=user%></h1>
+        
         <form>  <input type="submit" value="Sair" name="sair"/> </form>
+ <%}catch (Exception ex) { %>
+ <% sessao.invalidate();
+ 
+ }%>
     </body>
 </html>
