@@ -58,6 +58,7 @@
 %>
     <div class="mx-auto" style="width: 1200px">       
 <h1 style="color: whitesmoke">Usuário <%=user%></h1>
+<h4><a class="nav-link" href="test.jsp" style="color: whitesmoke">Realizar teste</a></h4>
         
         <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
  <%}catch (Exception ex) { %>
