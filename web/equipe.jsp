@@ -15,33 +15,33 @@
          <header>
              <%@include file="WEB-INF/jspf/menu.jspf" %>
          </header>
-         <h1 style="margin-bottom: 35px" align='center'>Equipe</h1>
+         <h1 style="color: whitesmoke" >Equipe</h1>
         <div class="container">
             <div class="container">
-                <h2>Alan Bernardino</h2>
+                <h2 style="color: whitesmoke">Alan Bernardino</h2>
                     <div class="container">     
                         <div class="row">
-                            <div class="col-sm-3 ">
-                                <img  src="imagem/alan.jpg" class="rounded-circle"  alt="luiz.jpg" width="220" height="220"> 
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <img  src="imagem/alan.jpg" class="rounded-circle" alt="luiz.jpg" width="220" height="220" > 
                             </div>
                         </div>
                     </div>
             </div>
             <div class="container">
-                <h2>Luiz Henrique</h2>
+                <h2 style="color: whitesmoke">Luiz Henrique</h2>
                     <div class="container">     
                         <div class="row">
-                            <div class="col-sm-3 ">
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                                 <img src="imagem/luiz.jpg" class="rounded-circle" alt="luiz.jpg" width="220" height="220"> 
                             </div>
                         </div>
                     </div>
             </div>
             <div class="container">
-                <h2>Mohamad Tarif</h2>
+                <h2 style="color: whitesmoke">Mohamad Tarif</h2>
                     <div class="container">     
                         <div class="row">
-                            <div class="col-sm-3 ">
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                                 <img src="imagem/mohamad.jpg" class="rounded-circle" alt="luiz.jpg" width="220" height="220"> 
                             </div>
                         </div>
