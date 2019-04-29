@@ -33,13 +33,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Pagina de login!</h1>
-        <form>
+     <body style="background-color: #2a247a">
+         <header>
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+         </header>
+        <h1 style="color: whitesmoke" >Pagina de login!</h1>
+        <form style="color: whitesmoke" >
             Usuario <input type="text" name="usuario"/>
             <input type="submit" name="logar" value="logar"/> 
         </form>
-        <a href="cadastrarConta.jsp">Cadastrar nova conta </a>
-        <%@include file="WEB-INF/jspf/foot.jspf" %>
+        <a href="cadastrarConta.jsp" style="color: whitesmoke" >Cadastrar nova conta </a>
+         <footer>
+            <%@include file="WEB-INF/jspf/foot.jspf" %>
+        </footer>
     </body>
 </html>
