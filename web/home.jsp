@@ -5,6 +5,8 @@
     Author     : MohamadTarif
 --%>
 
+<%@page import="br.com.fatecpg.quiz.DbHistorico"%>
+<%@page import="br.com.fatecpg.quiz.Historico"%>
 <%@page import="br.com.fatecpg.quiz.Perguntas"%>
 <%@page import="br.com.fatecpg.quiz.Db"%>
 <%@page import="br.com.fatecpg.quiz.Conta"%>
@@ -18,7 +20,6 @@
             double nota = 0.0;
             if (request.getParameter("AvengersQuiz") != null) {
                 int acertos = 0;
-
                 for (Perguntas pergunta : Db.getAvengersQuiz()) {
                     System.out.println(pergunta.getPergunta());
                     String resposta = request.getParameter(pergunta.getPergunta());
@@ -29,9 +30,15 @@
                         }
                     }
                 }
-
-                nota = (double) acertos / (double) Db.getAvengersQuiz().size();
+nota = (double) acertos / (double) Db.getAvengersQuiz().size();
+int i = 0;
+        if(i<=9){
+                Historico h1 = new Historico();
+                h1.setNota(nota);
+                DbHistorico.getHistorico().add(h1);
+                i++;
             }
+          }
         %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Quiz</title>
@@ -63,7 +70,8 @@
             <br>
             <h2 style="color: whitesmoke">Sua nota foi: <%=100*nota%>%</h2>
             <h4><a class="nav-link" href="test.jsp" style="color: whitesmoke">Realizar teste</a></h4>
-
+            <h1> 10 melhores notas </h1>
+            <%@include  file="WEB-INF/jspf/historico.jspf"%>
             <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
                 <%} catch (Exception ex) { %>
                 <% sessao.invalidate();

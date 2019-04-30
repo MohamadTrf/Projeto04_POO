@@ -1,0 +1,25 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="br.com.fatecpg.quiz.DbHistorico"%>
+<%@page import="br.com.fatecpg.quiz.Historico"%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>Hello World!</h2>
+<table border="1">
+    <tr>
+        <th>Nota</th>
+        <th>ID</th>
+    </tr>
+
+    
+
+<%
+    int i=0;
+    if(i<=9){  
+    for(Historico h: DbHistorico.getHistorico()){
+       int id = DbHistorico.getHistorico().indexOf(h); 
+%>
+<tr>
+    <th><%=h.getNota()*100%></th>
+    <th><%=id+1%></th>
+ <%i++;%>
+<%}}%>
+</table>
