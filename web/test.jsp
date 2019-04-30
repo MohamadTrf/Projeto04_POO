@@ -35,14 +35,15 @@
         <br>
         <br>
         <h2 style="color: whitesmoke">Quiz Avengers</h2>
-        <form action="index.jsp" style="color: whitesmoke">
+        <form action="home.jsp" style="color: whitesmoke">
             <%for(Perguntas q: Db.getAvengersQuiz()){%>
             <h3><%=q.getPergunta() %></h3>
-            <%for(String alternative: q.getAlternativas()){%>
+            <%for(String alternativa: q.getAlternativas()){%>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="<%=q.getPergunta()%>" value="<%=alternative%>">
+                    <input class="form-check-input" type="radio" name="<%=q.getPergunta()%>" value="<%=alternativa%>">
                     <label class="form-check-label" for="exampleRadios1">
-                        <%= alternative %>
+                        <%= alternativa %>
+                        <%System.out.println(q.getPergunta());%>
                     </label>
                     </div>
             
