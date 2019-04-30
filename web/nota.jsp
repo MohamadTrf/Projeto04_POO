@@ -68,8 +68,8 @@ int i = 0;
             <h1 style="color: whitesmoke">Usuário <%=user%></h1>
             <br>
             <br>
-            
-            <h4><a class="nav-link" href="test.jsp" style="color: whitesmoke">Realizar teste</a></h4>
+            <h2 style="color: whitesmoke">Sua nota foi: <%=100*nota%>%</h2>
+            <h4><a class="nav-link" href="test.jsp" style="color: whitesmoke">Realizar novo teste</a></h4>
             
             <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
                 <%} catch (Exception ex) { %>

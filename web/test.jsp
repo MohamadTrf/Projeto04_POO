@@ -35,7 +35,7 @@
         <br>
         <br>
         <h2 style="color: whitesmoke">Quiz Avengers</h2>
-        <form action="home.jsp" style="color: whitesmoke">
+        <form action="nota.jsp" style="color: whitesmoke">
             <%for(Perguntas q: Db.getAvengersQuiz()){%>
             <h3><%=q.getPergunta() %></h3>
             <%for(String alternativa: q.getAlternativas()){%>
