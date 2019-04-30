@@ -70,7 +70,7 @@ int i = 0;
             <br>
             <h2 style="color: whitesmoke">Sua nota foi: <%=100*nota%>%</h2>
             <h4><a class="nav-link" href="test.jsp" style="color: whitesmoke">Realizar teste</a></h4>
-            <h1> 10 melhores notas </h1>
+            <h1 style="color: whitesmoke"> 10 melhores notas </h1>
             <%@include  file="WEB-INF/jspf/historico.jspf"%>
             <form style="color: whitesmoke">  <input type="submit" value="Sair" name="sair"/> </form>
                 <%} catch (Exception ex) { %>

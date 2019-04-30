@@ -2,11 +2,10 @@
 <%@page import="br.com.fatecpg.quiz.DbHistorico"%>
 <%@page import="br.com.fatecpg.quiz.Historico"%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
 <table border="1">
     <tr>
-        <th>Nota</th>
-        <th>ID</th>
+        <th style="color: whitesmoke">Nota</th>
+        <th style="color: whitesmoke">ID</th>
     </tr>
 
     
@@ -18,8 +17,8 @@
        int id = DbHistorico.getHistorico().indexOf(h); 
 %>
 <tr>
-    <th><%=h.getNota()*100%></th>
-    <th><%=id+1%></th>
+    <th style="color: whitesmoke"><%=h.getNota()*100%></th>
+    <th style="color: whitesmoke"><%=id+1%></th>
  <%i++;%>
 <%}}%>
 </table>

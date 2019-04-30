@@ -12,6 +12,7 @@
         <title>Início</title>
     </head>
     <body style="background-color: #2a247a">
+        <div class="mx-auto" style="width: 1200px"> 
         <br>
                 <div class="text-center" style="color: red" >
             <h2>Declaramos para os devidos fins que este Quiz não possui qualquer tipo de Spoiler para "Vingadores: Ultimato"!!!</h2>
@@ -24,7 +25,7 @@
         </div>
         <button onclick="window.location.href='home.jsp'" class="btn btn-secondary btn-lg btn-block" name="Entrar" value="Entrar">Entrar</button>>
         
-        
+        </div>
         <footer>
             <%@include file="WEB-INF/jspf/foot.jspf" %>
         </footer>

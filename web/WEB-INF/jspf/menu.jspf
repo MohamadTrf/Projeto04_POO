@@ -13,7 +13,7 @@
                 <a class="nav-link" href="test.jsp" style="color: whitesmoke">Quiz</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="" style="color: whitesmoke">Testes já feitos</a>
+                <a class="nav-link" href="historico10.jsp" style="color: whitesmoke">Testes já feitos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="equipe.jsp" style="color: whitesmoke">Equipe</a>
